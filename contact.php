@@ -43,6 +43,8 @@ if (isset($_REQUEST["submit"])) {
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
 </head>
 
 <body>
@@ -174,12 +176,7 @@ if (isset($_REQUEST["submit"])) {
                             <h2>Find Your Dream Car</h2>
                             <p>Let us help u find your dream car.</p>
                         </div>
-                        <!-- <ul>
-                            <li><span>Weekday</span> 08:00 am to 18:00 pm</li>
-                            <li><span>Saturday:</span> 10:00 am to 16:00 pm</li>
-                            <li><span>Sunday:</span> Closed</li>
-                        </ul> -->
-                    </div>
+                       
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
@@ -198,8 +195,8 @@ if (isset($_REQUEST["submit"])) {
                             <input type="text" placeholder="Model variant" id="price" name="Price"> 
                             <!-- <textarea placeholder="Your Question"></textarea> -->
                             <button type="submit" class="site-btn" value="submit" name="submit">Submit Now</button>
-                            <a  class="site-btn" href= "http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=cms&table=car&pos=0">admin</a>
-                            
+                            <!-- <a  class="site-btn" href= "http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=cms&table=car&pos=0">admin</a>
+                             -->
                         </form>
                     </div>
                 </div>

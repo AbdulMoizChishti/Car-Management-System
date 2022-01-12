@@ -1,26 +1,31 @@
- <?php
-  // require_once "config.php";
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    
 
-  if (isset($_POST["username"])) {
-
-
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    if ($username == 'admin' and $password == 'admin') {
-      header("Location: dash.php");
-      die();
-    } else {
-      echo "You have not requested a login form!";
-    }
-  }
-  ?>
+<a href="./retr.php">Viewrecord</a>
+<a href="./insertr.php">insert record</a>
+<a href="./">update record</a>
+<a href="./delr.php">delete record</a>
 
 
 
 
 
- <!DOCTYPE html>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
  <html lang="en">
 
  <head>
@@ -31,7 +36,7 @@
    <!-- For google icons  -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-   <title>Login form</title>
+   <title>Dashboard</title>
    <style>
      body {
        padding: 0;
@@ -193,25 +198,45 @@
  <body>
    <div class="background"></div>
    <div class="container">
-     <h2>Login Form</h2>
-     <form action="login.php" method="post">
+     <h2>Dashboard</h2>
+     <form action="dash.php" method="post">
 
        <div class="form-item">
          <span class="material-icons-outlined">
            account_circle
          </span>
-         <input type="text" class="form-control" name="username" placeholder="userName" required="" autofocus="" />
+         <a href="./retr.php">Viewrecord</a>
        </div>
 
        <div class="form-item">
          <span class="material-icons-outlined">
-           lock
+           account_circle
          </span>
-         <input type="passWord" class="form-control" name="password" placeholder="Password" required="" />
-
+         <a href="./insertr.php">insert record</a>
        </div>
 
-       <button type="submit"> LOGIN </button>
+       <div class="form-item">
+         <span class="material-icons-outlined">
+           account_circle
+         </span>
+         <a href="./updr.php">Update record</a>
+       </div>
+
+       <div class="form-item">
+         <span class="material-icons-outlined">
+           account_circle
+         </span>
+         <a href="./delr.php">delete record</a>
+       </div>
+
+       <div class="form-item">
+         <span class="material-icons-outlined">
+           account_circle
+         </span>
+         <a href="./index.php">Home</a>
+       </div>
+
+       <!-- <button type="submit"> LOGIN </button> -->
      </form>
 
    </div>

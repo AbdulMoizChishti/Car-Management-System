@@ -44,7 +44,7 @@
         <div class="offcanvas__phone__num">
             <i class="fa fa-phone"></i>
             <span>+92 343 2523439</span>
-            <span><a href="./adacc.php">adacc</a></span>
+            <!-- <span><a href="./login.php">login</a></span> -->
         </div>
         <div class="offcanvas__social">
             <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -71,7 +71,7 @@
                             <div class="header__top__phone">
                                 <i class="fa fa-phone"></i>
                                 <span>+92 343 2523439</span>
-                                <span><a href="./adacc.php">adacc</a></span>
+                                
                             </div>
                             <div class="header__top__social">
                                 <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -105,7 +105,7 @@
                         </nav>
                         <div class="header__nav__widget">
 
-                            <a href="config.php" class="primary-btn">Add Car</a>
+                            <a href="./login.php" class="primary-btn">Admin Login</a>
                         </div>
                     </div>
                 </div>
@@ -561,7 +561,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__contact__option">
                             <div class="option__item"><i class="fa fa-phone"></i> <span>+92 343 2523439</span></div>
-                            <a href="./adacc.php">adacc</a>
+                            <!-- <a href="./login.php">login</a> -->
                             <div class="option__item email"><i class="fa fa-envelope-o"></i> bilal@gmail.com</div>
                         </div>
                     </div>
