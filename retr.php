@@ -1,53 +1,59 @@
-<?php
-include_once 'config.php';
-$result = mysqli_query($connection,"SELECT * FROM car ");
-?>
 <!DOCTYPE html>
 <html>
- <head>
- <title> Retrive data</title>
 
+<head>
+  <title>Table with database</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      color: #588c7e;
+      font-family: monospace;
+      font-size: 25px;
+      text-align: left;
+    }
 
+    th {
+      background-color: #588c7e;
+      color: white;
+    }
 
- </head>
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+
+    }
+  </style>
+</head>
+
 <body>
-
-
-
-<?php
-if (mysqli_num_rows($result) > 0) {
-?>
   <table>
-  
-  <tr>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>IDcar</th>
+      <th>Price</th>
+    </tr>
+    <?php
+    $conn = mysqli_connect("localhost", "root", "", "cms");
+    // Check connection
+    if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT Make, Model, IDcar, Price FROM car";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while ($row = $result->fetch_assoc()) {
+        echo "<tr><td>" . $row["Make"] . "</td><td>" . $row["Model"] . "</td><td>" . $row["IDcar"] . "</td><td>"
+          . $row["Price"] . "</td></tr>";
+      }
+      echo "</table>";
+    } else {
+      echo "0 results";
+    }
+    $conn->close();
+    ?>
+  </table>
+</body>
 
-    <td>Make</td>
-    <td>Model</td>
-    
-    <td>IDcar</td>
-    <td>Price</td>
-
-  </tr>
-<?php
-$i=0;
-while($row = mysqli_fetch_array($result)) {
-?>
-<tr>
-    <td><?php echo $row["Make"]; ?></td><br>
-    <td><?php echo $row["Model"]; ?></td><br> 
-    <td><?php echo $row["IDcar"]; ?></td><br>
-    <td><?php echo $row["Price"]; ?></td><br> 
-</tr>
-<?php
-$i++;
-}
-?>
-</table>
- <?php
-}
-else{
-    echo "No result found";
-}
-?>
- </body>
 </html>

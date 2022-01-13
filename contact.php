@@ -57,9 +57,8 @@ if (isset($_REQUEST["submit"])) {
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__widget">
-            <a href="#"><i class="fa fa-cart-plus"></i></a>
-            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
-            <a href="#" class="primary-btn">Add Car</a>
+
+            <a href="./Login.php" class="primary-btn">Admin Login</a>
         </div>
         <div class="offcanvas__logo">
             <a href="./index.php"><img src="img/logo.png" alt=""></a>
@@ -70,7 +69,8 @@ if (isset($_REQUEST["submit"])) {
 
                 <li><a href="./about.php">About</a></li>
                 <li><a href="./contact.php">Contact</a></li>
-                <li><a href="./forms.php">Forms</a></li>
+                <li><a href="./Login.php">Admin Login</a></li>
+
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -83,10 +83,10 @@ if (isset($_REQUEST["submit"])) {
             <span> +92 343 2523439</span>
         </div>
         <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+                            <a href="https://www.skype.com/" class="skype"><i class="fa fa-skype"></i></a>
         </div>
     </div>
     <!-- Offcanvas Menu End -->
@@ -133,10 +133,13 @@ if (isset($_REQUEST["submit"])) {
                                 <li class="active"><a href="./index.php">Home</a></li>
 
                                 <li><a href="./about.php">About</a></li>
-                                <li><a href="./contact.php">Contact</a></li>
+                                <li><a href="./contact.php">Find Car</a></li>
+                                <!-- <li><a href="./Login.php">Admin Login</a></li> -->
                             </ul>
                         </nav>
-                        <a href="#" class="primary-btn">Add Car</a>
+                        <div class="header__nav__widget">
+                            <a href="./login.php" class="primary-btn">Admin Login</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,32 +179,31 @@ if (isset($_REQUEST["submit"])) {
                             <h2>Find Your Dream Car</h2>
                             <p>Let us help u find your dream car.</p>
                         </div>
-                       
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact__form">
-                        <form action="contact.php" method="post">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Brand" id="make" name="Make">
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="contact__form">
+                            <form action="contact.php" method="post">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Brand" id="make" name="Make">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Model" id="model" name="Model">
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Model" id="model" name="Model">
-                                </div>
-                            </div>
-                            <input type="text" placeholder="Power">
-                            <input type="text" placeholder="Color">
-                            <input type="text" placeholder="Mileage" id="id" name="IDcar">
-                            <input type="text" placeholder="Model variant" id="price" name="Price"> 
-                            <!-- <textarea placeholder="Your Question"></textarea> -->
-                            <button type="submit" class="site-btn" value="submit" name="submit">Submit Now</button>
-                            <!-- <a  class="site-btn" href= "http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=cms&table=car&pos=0">admin</a>
+
+                                <input type="text" placeholder="ID" id="id" name="IDcar">
+                                <input type="text" placeholder="Price" id="price" name="Price">
+                                <!-- <textarea placeholder="Your Question"></textarea> -->
+                                <button type="submit" class="site-btn" value="submit" name="submit">Submit Now</button>
+                                <!-- <a  class="site-btn" href= "http://localhost/phpmyadmin/index.php?route=/sql&server=1&db=cms&table=car&pos=0">admin</a>
                              -->
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Contact Section End -->
 

@@ -71,7 +71,7 @@
                             <div class="header__top__phone">
                                 <i class="fa fa-phone"></i>
                                 <span>+92 343 2523439</span>
-                                
+
                             </div>
                             <div class="header__top__social">
                                 <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -131,8 +131,9 @@
                             <div class="car-model">Model 2019</div>
                             <h2>$399<span>/Month</span></h2>
                         </div>
-                        <a href="#" class="primary-btn"><img src="img/wheel.png" alt=""> Test Drive</a>
+                       
                         <a href="#" class="primary-btn more-btn">Learn More</a>
+
                     </div>
                 </div>
 

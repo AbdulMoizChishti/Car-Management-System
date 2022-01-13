@@ -41,7 +41,7 @@
      }
 
      .background {
-       background: url('./background-img.jpg') rgba(0, 0, 0, 0.61);
+       background: url('1.jpg') rgba(0, 0, 0, 0.61);
        background-repeat: no-repeat;
        background-size: cover;
        background-blend-mode: darken;

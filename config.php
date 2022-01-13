@@ -16,7 +16,3 @@ else{
 
 echo "false";
 }
-
-
-
-?>

@@ -34,9 +34,8 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__widget">
-            <a href="#"><i class="fa fa-cart-plus"></i></a>
-            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
-            <a href="#" class="primary-btn">Add Car</a>
+
+            <a href="./Login.php" class="primary-btn">Admin Login</a>
         </div>
         <div class="offcanvas__logo">
             <a href="./index.php"><img src="img/logo.png" alt=""></a>
@@ -51,10 +50,10 @@
             <span> +92 343 2523439</span>
         </div>
         <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+                            <a href="https://www.skype.com/" class="skype"><i class="fa fa-skype"></i></a>
         </div>
     </div>
     <!-- Offcanvas Menu End -->
@@ -102,11 +101,14 @@
 
                                 <li><a href="./about.php">About</a></li>
                                 <li><a href="./contact.php">Contact</a></li>
+                                <!-- <li><a href="./Login.php">Admin Login</a></li> -->
 
                             </ul>
                         </nav>
 
-                        <a href="#" class="primary-btn">Add Car</a>
+                        <div class="header__nav__widget">
+                            <a href="./login.php" class="primary-btn">Admin Login</a>
+                        </div>
                     </div>
                 </div>
             </div>
