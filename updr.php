@@ -9,8 +9,6 @@ if (isset($_POST["submit"])) {
     $Price = $_POST["Price"];
 
 
-    // $sql = "UPDATE car SET Make=?, Model=?, Price=? WHERE IDcar=?";
-    // mysqli_query($connection, $sql, [$name, $email, $password, $id]);
 
 
     $ins = "UPDATE car SET Make='$Make',Model='$Model', Price='$Price' WHERE IDcar='$IDcar'";
